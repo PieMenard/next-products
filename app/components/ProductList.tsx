@@ -26,14 +26,15 @@ const ProductList = ({ productsData }: { productsData: any }) => {
                   <CardDescription>{product.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="rounded-md overflow-hidden cursor-pointer">
-                  <div className="w-full aspect-w-16 aspect-h-8 lg:h-80"></div>
-                  <Image
-                    src={product.images[0]}
-                    alt="product description"
-                    width={'500'}
-                    height={'500'}
-                    className="h-full w-full object-cover object-top"
-                  />
+                  <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+                    <Image
+                      src={product.images[0]}
+                      alt="product description"
+                      width={'500'}
+                      height={'500'}
+                      className="h-full w-full object-cover object-top"
+                    />
+                  </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-950">
                       ${product.price}

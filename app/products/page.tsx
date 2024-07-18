@@ -4,7 +4,7 @@ async function getProducts() {
   const res = await fetch('https://dummyjson.com/products');
 
   if (!res.ok) {
-    throw new Error('Could no get products data');
+    throw new Error('Could not get products data');
   }
 
   const data = await res.json();
